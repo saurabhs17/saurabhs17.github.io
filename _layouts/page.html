@@ -1,8 +1,49 @@
 ---
 layout: default
 ---
+<br><br>
+   <header>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                                <ul class="navbar-nav brand">
+                    <img src="assets/img/avatar.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Saurabh Sharma</h5>
+                        <div class="brand-subtitle">Saurabh</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+				   <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="index.html#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+  </header>
+<br><br>
 <section class="post">
    <div class="section-container">
+	   
       <div class="container">
          <div class="row">
             <div class="col-xs-12">
@@ -12,6 +53,19 @@ layout: default
             </div>
          </div>
       </div>
+
       {{content}}
+      
    </div>
 </section>
+
+   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+   <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+   <!-- bootstrap 3 affix -->
+   <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+   <!-- Isotope  -->
+   <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+   <!-- Google mpas -->
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdr71ocJOCymA2A--8YCWjU3he9rNJkgU&callback=initMap"></script>
+   <!-- main js -->
+   <script type="text/javascript" src="assets/js/main.js"></script>
