@@ -3,53 +3,88 @@ layout: default
 title: Saurabh Sharma
 ---
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="blog.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Blog</a>
-    <header class="header">
-        <div class="container">
-            <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="https://instagram.com/{{site.author.ig}}"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://twitter.com/{{site.author.twitter}}"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://github.com/{{site.author.github}}"><i class="ti-github" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://youtube.com/{{site.author.yt}}"><i class="ti-youtube" aria-hidden="true"></i></a></li>
-            </ul>  
-            
-   <div class="container">
-      <div class="row">
-         <div class="col-xs-12">
-            <div class="hero-full-wrapper">
-               <div class="text-content">
-                  <h1>Hello, <br>
-                     <span id="typed-strings">
-                     <span> I am Saurabh Sharma</span>
-                     <span>a coder and physicist</span>
-                     <span>a techie</span>
-                     <span>a cricket player, football lover, linux enthusiast</span>
-                     </span>
-                     <span id="typed"></span>
-                  </h1>
-               </div>
-            </div>
+   <a href="blog.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Blog</a>
+   <header class="header">
+      <div class="container">
+         <ul class="social-icons pt-3">
+            <li class="social-item"><a class="social-link text-light" href="https://instagram.com/{{site.author.ig}}"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link text-light" href="https://twitter.com/{{site.author.twitter}}"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link text-light" href="https://github.com/{{site.author.github}}"><i class="ti-github" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link text-light" href="https://youtube.com/{{site.author.yt}}"><i class="ti-youtube" aria-hidden="true"></i></a></li>
+         </ul>
+         <div class="header-content">
+            <h2 class="header-greeting" >{{site.greetings}}</h2>
+            <h2>I am</h2>
+            <h1 class="header-title">Saurabh Sharma</h1>
+            <h2 class="header-subtitle" >
+               <span class="text-slider-items">
+               a coder and physicist-
+               a techie-
+               a chess player, football lover, linux enthusiast
+               </span>
+               <strong class="text-slider"></strong>
+            </h2>
+            <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
          </div>
       </div>
-   </div>
-   </div>
+   </header>
    
-    </header>
-
-
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    
-    <!-- Google mpas -->
-    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>-->
-
-    <!-- JohnDoe js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+   {% include navbar.html %}
+   {% include about.html %}
+   <!-- Add jquery cdn -->
+   <script src=
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!-- Add this script for successful 
+      implementation of typed.js  -->
+   <script>
+      if ($(".text-slider").length == 1) {
+            
+          var typed_strings = 
+              $(".text-slider-items").text();
+      
+          var typed = new Typed(".text-slider", {
+              strings: typed_strings.split("- "),
+            
+                  stringsElement: null,
+                  typeSpeed: 100,
+                  startDelay: 0,
+                  backSpeed: 20,
+                  smartBackspace: !0,
+                  shuffle: !1,
+                  backDelay: 700,
+                  fadeOut: !1,
+                  fadeOutClass: "typed-fade-out",
+                  fadeOutDelay: 500,
+                  loop: !0,
+                  loopCount: 1 / 0,
+                  showCursor: !0,
+                  cursorChar: "|",
+                  autoInsertCss: !0,
+                  attr: null,
+                  bindInputFocusEvents: !1,
+                  contentType: "html",
+                  onComplete: function(t) {},
+                  preStringTyped: function(t, e) {},
+                  onStringTyped: function(t, e) {},
+                  onLastStringBackspaced: function(t) {},
+                  onTypingPaused: function(t, e) {},
+                  onTypingResumed: function(t, e) {},
+                  onReset: function(t) {},
+                  onStop: function(t, e) {},
+                  onStart: function(t, e) {},
+                  onDestroy: function(t) {}
+          });
+      }
+   </script>
+   <!-- core  -->
+   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+   <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+   <!-- bootstrap 3 affix -->
+   <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+   <!-- Isotope  -->
+   <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+   <!-- Google mpas -->
+   <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>-->
+   <!-- JohnDoe js -->
+   <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
