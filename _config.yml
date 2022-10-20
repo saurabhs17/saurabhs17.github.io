@@ -6,6 +6,9 @@ lang: en-US
 timezone: Asia/Kolkata
 repo: 'https://github.com/saurabhs17/saurabhs17.github.io'
 data-theme: dark
+discus-identifier: saurabhs17 # replace with your disqus shortname
+
+
 author:
   name: Saurabh Sharma
   bio: 'just a minimalist, personal blog'

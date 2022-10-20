@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<br><br>
+<header>
+   {% include navbar.html %}
+</header>
 <div class="section-container post">
    <div class="container blog-post">
       <div class="row">
@@ -36,3 +40,8 @@ layout: default
       </nav>
    </div>
 </div>
+{% include disqus.html %}
+
+<br><br>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/vendors/bootstrap/bootstrap.bundle.js"></script>

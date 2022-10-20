@@ -2,6 +2,9 @@
 layout: default
 title: Saurabh Sharma
 ---
+<head>
+   <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+</head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
    <a href="blog.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Blog</a>
    <header class="header">
@@ -28,16 +31,25 @@ title: Saurabh Sharma
          </div>
       </div>
    </header>
-   
    {% include navbar.html %}
    {% include about.html %}
    {% include resume.html %}
    {% include contact.html %}
    <!-- Add jquery cdn -->
-   <script src=
-      "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <!-- Add this script for successful 
       implementation of typed.js  -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!-- core  -->
+   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+   <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+   <!-- bootstrap 3 affix -->
+   <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+   <!-- Isotope  -->
+   <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+   <!-- Google mpas -->
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdr71ocJOCymA2A--8YCWjU3he9rNJkgU&callback=initMap"></script>
+   <!-- main js -->
+   <script type="text/javascript" src="assets/js/main.js"></script>
    <script>
       if ($(".text-slider").length == 1) {
             
@@ -78,15 +90,4 @@ title: Saurabh Sharma
           });
       }
    </script>
-   <!-- core  -->
-   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-   <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-   <!-- bootstrap 3 affix -->
-   <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-   <!-- Isotope  -->
-   <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-   <!-- Google mpas -->
-   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdr71ocJOCymA2A--8YCWjU3he9rNJkgU&callback=initMap"></script>
-   <!-- main js -->
-   <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
